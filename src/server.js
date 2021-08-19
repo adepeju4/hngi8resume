@@ -33,7 +33,7 @@ app.use('/', resumeRouter);
 
 const startServer = () => {
     app.listen(port, hostname, () => {
-        console.log(`Server running ${port}`);
+        console.log(`Server running at ${port}`);
     });
 }
 
