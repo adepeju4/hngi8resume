@@ -20,14 +20,10 @@ let handleSubmit = (e) => {
         .then(response => response.json())
         .then(data => {
             let error = document.querySelector('.error');
-            // data.error.for((err) => {
-            //     error.innerHTML = `<li>${err.msg}</li>`;
-            // })
             const errorsArray = data.error
             let list;
             for (let i of errorsArray) {
                 list = `<li class="error--message">${i.msg}</li>`;
-                console.log("adepeju is a bad beech")
             }
             error.innerHTML = list;
             console.log(data, "the data")
