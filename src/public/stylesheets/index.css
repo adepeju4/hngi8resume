@@ -280,8 +280,10 @@ body::-webkit-scrollbar{
   font-size: 1.5rem;
 }
 
+
+
 .footer{
-  min-height: 30vh;
+  min-height: 35vh;
   background-color: #8a5a44;
   color: #fff;
   font-size: 1.5rem;
@@ -298,6 +300,11 @@ body::-webkit-scrollbar{
 
 .footer .i4g{
   width: 20rem;
+}
+
+.footer a{
+  
+  color: white;
 }
 
 .footer--img{
