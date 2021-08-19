@@ -4,8 +4,7 @@
   "description": "Backend Stage 2 task",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "dev": "lite-server ./src/views/index.ejs",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Adepeju Orefejo",
