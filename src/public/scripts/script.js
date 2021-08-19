@@ -19,13 +19,17 @@ let handleSubmit = (e) => {
     fetch("http://localhost:8000/message", Params)
         .then(response => response.json())
         .then(data => {
-            let error = document.querySelector('.error');
-            const errorsArray = data.error
+           
+            let error = document.querySelector(".error");
+            const errorsArray = data.error;
             let list;
             for (let i of errorsArray) {
                 list = `<li class="error--message">${i.msg}</li>`;
             }
             error.innerHTML = list;
+            setTimeout(() => {
+                error.style.display = 'none';
+            }, 3000)
             console.log(data, "the data")
         })
         .catch(err => console.log(err));
