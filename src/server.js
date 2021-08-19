@@ -5,7 +5,6 @@ const path = require("path");
 const resumeRouter = require("./routes");
 dotenv.config();
 
-const hostname = "localhost";
 const port = process.env.PORT;
 
 const app = express();
