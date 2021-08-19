@@ -1,0 +1,29 @@
+{
+  "name": "resume-form",
+  "version": "1.0.0",
+  "description": "Backend Stage 2 task",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "dev": "lite-server ./src/views/index.ejs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adepeju Orefejo",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-validator": "^6.12.1",
+    "get-google-fonts": "^1.2.2",
+    "mongoose": "^5.13.7"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.12"
+  }
+}
