@@ -1,5 +1,4 @@
 const express = require("express");
-const logger = require("morgan");
 const cors = require("cors");
 const dotenv = require("dotenv");
 const path = require("path");
@@ -12,7 +11,6 @@ const port = process.env.port || 3000;
 const app = express();
 
 app.use(express.json());
-app.use(logger("dev"));
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 
