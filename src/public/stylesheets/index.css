@@ -253,6 +253,7 @@ body::-webkit-scrollbar{
 .contact--input input, .contact--input textarea, .contact--input input:hover, .contact--input textarea:hover{
   outline: none;
   padding: 1rem;
+  border: none;
   
 }
 
