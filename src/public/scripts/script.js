@@ -29,7 +29,7 @@ let handleSubmit = (e) => {
         error.innerHTML = list;
         setTimeout(() => {
           error.style.display = "none";
-        }, 3000);
+        }, 7000);
         console.log(data, "the data");
       })
       .catch((err) => console.log(err));
