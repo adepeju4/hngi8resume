@@ -5,7 +5,8 @@ const path = require("path");
 const resumeRouter = require("./routes");
 dotenv.config();
 
-const port = process.env.PORT;
+const hostname = "localhost";
+const port = process.env.PORT || 3000;
 
 const app = express();
 
@@ -29,8 +30,8 @@ app.use('/', resumeRouter);
 
 
 const startServer = () => {
-    app.listen(port, () => {
-        console.log(`Server running at ${port}`);
+    app.listen(port, hostname, () => {
+        console.log(`Server running at http://${hostname}:${port}`);
     });
 }
 
