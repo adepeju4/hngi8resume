@@ -169,7 +169,7 @@ body::-webkit-scrollbar{
 }
 
 .about--body .about--summary{
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   text-align: left;
   padding: 2rem 0;
    margin-top: 5rem;
@@ -177,7 +177,7 @@ body::-webkit-scrollbar{
 }
 
 .about--body .about--skills > p{
-  font-size: 1.5rem;
+ 
   text-align: left;
    margin-bottom: 2rem;
    font-weight: 400;
@@ -198,8 +198,8 @@ body::-webkit-scrollbar{
 }
 
 
-.about--skills .skills--list .skills--item{
-  font-size: 1.5rem;
+.about--skills {
+  font-size: 1.7rem;
 }
 
 .about--skills ul li ul:nth-of-type(1){
@@ -227,7 +227,7 @@ body::-webkit-scrollbar{
 
 .contact--form{
  
-  padding: 4rem 3rem;
+  padding: 8rem 3rem;
   box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
   backdrop-filter: blur(10px);
   
@@ -238,6 +238,10 @@ body::-webkit-scrollbar{
   flex-direction: column;
   height: 40rem;
   justify-content: space-around;
+  align-items: flex-end;
+}
+.contact--form form > div{
+   width: 100%;
 }
 
 .contact--input{
@@ -254,7 +258,7 @@ body::-webkit-scrollbar{
   outline: none;
   padding: 1rem;
   border: none;
-  width: 35rem;
+ 
 }
 
 .contact--form button{
@@ -415,4 +419,19 @@ padding: 2rem 7rem 2rem 8rem;
   font-size: 3rem;
   color: #fff;
 }
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+  textarea:focus,
+  input:focus {
+    font-size: 16px;
+    background: #eee;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+ 
+  textarea,
+  input {
+    font-size: 16px;
+  }
 }
