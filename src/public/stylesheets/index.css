@@ -74,7 +74,7 @@ body::-webkit-scrollbar{
 #hero .hero>div{
 
     position: absolute;
-    bottom: 53px;
+    bottom: 20rem;
 }
 
 #hero p{
@@ -171,7 +171,7 @@ body::-webkit-scrollbar{
 }
 
 .about--body .about--summary{
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   text-align: left;
   padding: 2rem 0;
    margin-top: 5rem;
@@ -179,7 +179,7 @@ body::-webkit-scrollbar{
 }
 
 .about--body .about--skills > p{
-  font-size: 1.5rem;
+ 
   text-align: left;
    margin-bottom: 2rem;
    font-weight: 400;
@@ -194,14 +194,14 @@ body::-webkit-scrollbar{
 .about--body .about--skills{
   text-align: left;
   padding: 2rem;
-    
+  
   border-bottom: 2px solid #8a5a44;
   margin-top: 5rem;
 }
 
 
-.about--skills .skills--list .skills--item{
-  font-size: 1.3rem;
+.about--skills {
+  font-size: 1.7rem;
 }
 
 .about--skills ul li ul:nth-of-type(1){
@@ -288,6 +288,10 @@ body::-webkit-scrollbar{
   flex-direction: column;
   height: 40rem;
   justify-content: space-around;
+  align-items: flex-end;
+}
+.contact--form form > div{
+   width: 100%;
 }
 
 .contact--input{
@@ -303,7 +307,8 @@ body::-webkit-scrollbar{
 .contact--input input, .contact--input textarea, .contact--input input:hover, .contact--input textarea:hover{
   outline: none;
   padding: 1rem;
-  
+  border: none;
+ 
 }
 
 .contact--form button{
@@ -471,4 +476,20 @@ padding: 2rem 7rem 2rem 8rem !important;
   grid-template-rows: minmax(300px, auto);
   grid-gap: 3rem;
 }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+  textarea:focus,
+  input:focus {
+    font-size: 16px;
+    background: #eee;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+ 
+  textarea,
+  input {
+    font-size: 16px;
+  }
 }
