@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href= "/stylesheets/index.css" rel="stylesheet" type="text/css" crossorigin="anonymous"/>
+    <link href= "/stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css" crossorigin="anonymous"/>
      
     <title>Resume Esdeath</title>
 </head>
@@ -112,29 +113,37 @@
           <div class="contact--form">
 
               <form>
-                <ul class="error">
-                    
+                <ul class="response">
+                     
                 </ul>
                   <div class="contact--input">
 
                     <label for="name"> Name</label>
-                  <input type="text" name="name" id="name" required>
+                  <input type="text" name="name" id="name" >
+                  <small class="error--message"></small>
                   </div>
                   <div class="contact--input">
 
                     <label for="email"> Email</label>
-                  <input type="text" name="email" id="email" required>
+                  <input type="text" name="email" id="email" >
+                  <small class="error--message"></small>
                   </div>
                   <div class="contact--input">
-
+                    
                     <label for="message">Message</label>
                   <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                  </div>
+                  <small class="error--message"></small>
+                </div>
                   <button>
                       Send
                   </button>
               </form>
           </div>
+      </div>
+  </section>
+  <section id="code--stack">
+      <div class="code--stack container">
+
       </div>
   </section>
   <footer>

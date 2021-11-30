@@ -1,4 +1,5 @@
 const Contacts = require("../model");
+const session = require("express-session");
 const {resultsValidator} = require("../validators")
 
 
@@ -9,14 +10,15 @@ exports.postMessage = async (req, res) => {
     const { name, email, message } = contactBody;
         
     const errors = resultsValidator(req);
+    
         if (errors.length > 0) {
+            req.session.errors = errors;
+            req.session.success = false;
+          
         return res.status(400).json({
-            method: req.method,
-            status: res.statusCode,
-            error: errors,
+            errors
         });
-    }
-        
+        } 
     const findDuplicateNameEmailAndMessage = await Contacts.findOne({
        $and: [{ name }, { email }, { message }]
     });
@@ -45,3 +47,6 @@ exports.getMessages = async (req, res) => {
         console.log(error);
     }
 }
+
+
+
