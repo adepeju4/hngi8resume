@@ -248,6 +248,10 @@ body::-webkit-scrollbar{
   font-size: 1.4rem;
 }
 
+#projects{
+  margin-top: 10rem;
+}
+
 .projects .heading, .services .heading{
   font-size: 2.4rem;
   display: flex;
@@ -282,8 +286,8 @@ body::-webkit-scrollbar{
 .contact--form{
  width: 85%;
   padding: 4rem 3rem;
-  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-  backdrop-filter: blur(10px);
+  /* box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  backdrop-filter: blur(10px); */
   
 }
 .contact--form form{
@@ -443,7 +447,7 @@ form .contact--input.error input, form .contact--input.error textarea{
 }
 
 .about--body > aside p{
-  margin-top: -10rem;
+  margin-top: 7rem;
 }
 
 .about--body{
@@ -495,7 +499,7 @@ padding: 2rem 7rem 2rem 8rem !important;
 .contact--form{
   flex: 0.5;
   color: #fff;
-  padding: 0 8rem;
+  padding: 1rem 8rem;
 }
 
 .contact--caption{
