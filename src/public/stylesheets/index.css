@@ -296,6 +296,7 @@ body::-webkit-scrollbar{
   
 }
 .contact--form form{
+  width: 100%;
   display: flex;
   width: 45rem;
   color: #fff;
